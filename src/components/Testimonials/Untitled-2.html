@@ -1,0 +1,71 @@
+import React from "react"
+import './Hero.css'
+import Header from "../Header/Header"
+const Hero = () => {
+    return (
+
+    <div className="hero">
+        <div className="left-h">
+            leftside
+            <Header/>
+           
+            <div className="the-best-ad">
+                <div></div>
+                <span>the best fitness club in the town</span>
+            </div>
+            <div className="hero-text">
+                <div>
+                    <span className="stroke-text">Shape</span>
+                    <span>You</span>
+                </div>
+                <div>
+                    <span>Ideal body</span>
+                </div>
+            </div>
+          
+            
+        </div>
+        <div className="right-h">right side</div>
+</div>
+    )
+}
+export default Hero
+.header{
+    display:flex;
+    justify-content: space-between;
+}
+.logo{
+    width:10rem;
+    height:3rem;
+}
+.header-menu{
+    list-style: none;
+    display:flex;
+    gap:2rem;
+    color:white;
+}
+.header-menu>li{
+    cursor: pointer;
+}
+.header-menu>li:hover{
+    color:var(--orange);
+    cursor: pointer;
+}
+import React from 'react'
+import './Header.css'
+import Logo from '../../assets/logo.png'
+const Header = () => {
+    return (
+        <div className='header'>
+            <img src={Logo} alt="" className='logo'/>
+            <ul className='header-menu'>
+                <li>Home</li>
+                <li>Programs</li>
+                <li>Why us</li>
+                <li>Plans</li>
+                <li>Testmonials</li>
+            </ul>
+        </div>
+    )
+}
+export default Header
